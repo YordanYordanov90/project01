@@ -15,11 +15,11 @@ const Navbar = () => {
     <nav className="relative container mx-auto p-8">
       <div className="flex items-center justify-between">
         <h3 className="p-2 font-bold text-custom-text text-4xl">Website</h3>
-        {/* Hamburger icon for mobile menu toggle */}
-        <div className="md:hidden" onClick={toggleMenu}>
+        
+        <div className="md:hidden p-3" onClick={toggleMenu}>
           <AiOutlineMenu size={30} className="cursor-pointer" />
         </div>
-        {/* Navigation links for larger screens */}
+        
         <div className="text-custom-text space-x-8 ml-16 items-center text-xl hidden md:flex">
           <a href="" className="transition-transform duration-300 hover:scale-110 hover:text-red-500">Начало</a>
           <a href="" className="transition-transform duration-300 hover:scale-110 hover:text-red-500">За нас</a>
@@ -34,14 +34,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu that slides in when isOpen is true */}
+      
       {isOpen && (
-        <div className="fixed inset-0 bg-black/80 z-10">
-          {/* Close button */}
-          <div className="flex justify-end p-4">
+        <div className="fixed inset-0 bg-black/90 z-10">
+         
+          <div className="flex justify-end p-6 m-2">
             <AiOutlineClose size={30} onClick={toggleMenu} className="cursor-pointer text-white" />
           </div>
-          {/* Mobile menu content */}
+        
           <div className="flex flex-col items-center space-y-6 text-white text-xl mt-16">
             <a href="" onClick={toggleMenu}>Начало</a>
             <a href="" onClick={toggleMenu}>За нас</a>
