@@ -6,7 +6,7 @@ const Signup = () =>{
             <p className='px-24 py-8 tracking-wider max-sm:text-sm'>
                  Оставете вашият телефон и ние ще се свържем с вас, за да <br /> отговорим на всички въпроси
              </p>
-             <div className='flex items-center justify-center'>
+             <div className='flex items-center flex-nowrap justify-center '>
                 <div className='relative'>
                     <img
                     src="./mail.png"
